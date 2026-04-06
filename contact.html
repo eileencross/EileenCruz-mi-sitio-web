@@ -1,0 +1,75 @@
+       <section id="contacto" class="section">
+            <h2 class="section-title">Contacto</h2>
+            <p class="section-subtitle">
+                ¿Tenés una propuesta o pregunta? Escribime y te respondo a la brevedad.
+            </p>
+
+
+            <form action="#" method="POST" class="contact-form">
+
+
+                <div class="form-group">
+                    <label for="nombre">Nombre completo *</label>
+                    <input
+                        type="text"
+                        id="nombre"
+                        name="nombre"
+                        placeholder="Ej: Pepita Marquez"
+                        required
+                        minlength="3"
+                        maxlength="50"
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="tu@email.com"
+                        required
+                    >
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input
+                            type="tel"
+                            id="telefono"
+                            name="telefono"
+                            placeholder="3874123456"
+                            pattern="[0-9]{10}"
+                        >
+                    </div>
+
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje *</label>
+                    <textarea
+                        id="mensaje"
+                        name="mensaje"
+                        rows="5"
+                        placeholder="Escribí tu mensaje aquí..."
+                        required
+                        minlength="10"
+                    ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="acepto" required>
+                        Acepto que mis datos sean utilizados para responder mi consulta *
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">
+                    Enviar mensaje
+                </button>
+
+                <p class="form-note">
+                    * Campos obligatorios.
+                </p>
+            </form>
+        </section>
