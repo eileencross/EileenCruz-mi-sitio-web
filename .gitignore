@@ -10,3 +10,8 @@ Thumbs.db
 
 # Variables de entorno
 .env
+
+# Backend
+backend/messages.json
+backend/__pycache__/
+backend/*.pyc

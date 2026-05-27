@@ -1,300 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-
-    <meta charset="UTF-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Eileen Cruz - Estudiante de Programacion</title>
-
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Eileen Cruz - Estudiante de Programación en Salta, Argentina. HTML5, CSS3, JavaScript, React y Python.">
+  <meta property="og:title" content="Eileen Cruz - Estudiante de Programación">
+  <meta property="og:description" content="Portfolio personal - Prácticas Profesionalizantes II">
+  <meta property="og:type" content="website">
+  <title>Eileen Cruz - Estudiante de Programación</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💜</text></svg>">
+  <link rel="preload" as="style" href="css/style.css">
+  <link rel="preload" as="style" href="css/components.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 </head>
-
 <body>
-  
-    <header class="site-header">
-        <h1 class="logo">
-           Hola, este es mi primer sitio web
-        </h1>
 
-        <nav class="navbar">
-            <a href="http://127.0.0.1:5500/index.html" class="nav-link">Inicio</a>
-            <a href="#sobre-mi" class="nav-link">Sobre mí</a>
-            <a href="#habilidades" class="nav-link">Habilidades</a>
-            <a href="#contacto" class="nav-link">Contacto</a>
-        </nav>
-    </header>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
+  <div data-include="nav"></div>
 
+  <main id="main-content" role="main">
+    <div data-include="hero"></div>
+    <div data-include="about"></div>
+    <div data-include="skills"></div>
+    <div data-include="education"></div>
+    <div data-include="projects"></div>
+  </main>
 
-    <main>
+  <div data-include="footer"></div>
 
-
-        <section id="inicio" class="hero">
-            <div class="hero-content">
-                <p class="hero-greeting">Bienvenidos, soy </p>
-                <h2 class="hero-name">Eileen Cruz</h2>
-                <p class="hero-role">
-                    Estudiante de <strong>Programación</strong> en Salta, Argentina
-                </p>
-                <p class="hero-description">
-                    Aprendiendo <em>HTML5</em>, <em>CSS3</em>, <em>JavaScript</em> y <em>React</em>
-                    para construir el futuro de la web.
-                </p>
-                <a href="#contacto" class="btn btn-primary">Contactame</a>
-                <a href="https://github.com/eileencross" target="_blank" class="btn btn-secondary">
-                    Mi GitHub
-                </a>
-            </div>
-        </section>
-
-
-
-        <section id="sobre-mi" class="section">
-            <h2 class="section-title">Un poco sobre mí</h2>
-
-            <div class="about-container">
-                <figure class="about-photo">
-                    <img
-                        src="D:\TP1-mi-sitio\image\image-perfil.jpeg"
-                        alt="Foto de perfil de Eileen, estudiante de programación"
-                        class="profile-img"
-                    >
-                    <figcaption>Estudiante de Programación · 2026</figcaption>
-                </figure>
-
-                <div class="about-text">
-                    <p>
-                        Tengo <strong>31 años</strong> y estudio la carrera de
-                        <strong>Técnico Superior en Análisis de Sistemas</strong> en Salta, Argentina.
-                        Me apasiona la tecnología y estoy aprendiendo a programar para
-                        construir aplicaciones web que resuelvan problemas reales.
-                    </p>
-                    <p>
-                        Actualmente estoy cursando <em>Prácticas Profesionalizantes II</em>,
-                        donde aprendo <strong>HTML5</strong>, <strong>CSS3</strong>,
-                        <strong>JavaScript</strong>, <strong>React</strong> y
-                        <strong>Python con FastAPI</strong>.
-                    </p>
-                    <p>
-                        Mi objetivo es conseguir mi primer empleo como
-                        <strong>Programadora Junior</strong> antes de fin de año.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-
-        <section id="habilidades" class="section section-alt">
-            <h2 class="section-title">Habilidades Técnicas por adquirir en esta Practicas Profesionalizantes II</h2>
-
-            <div class="cards-container">
-
-                <article class="card">
-                    <div class="card-icon">🌐</div>
-                    <h3 class="card-title">Frontend</h3>
-                    <ul class="card-list">
-                        <li>HTML5 semántico</li>
-                        <li>CSS3 y Flexbox</li>
-                        <li>JavaScript ES6+</li>
-                        <li>React.js</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">⚙️</div>
-                    <h3 class="card-title">Backend</h3>
-                    <ul class="card-list">
-                        <li>Python 3</li>
-                        <li>FastAPI</li>
-                        <li>Node.js</li>
-                        <li>APIs REST</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">🔧</div>
-                    <h3 class="card-title">Herramientas</h3>
-                    <ul class="card-list">
-                        <li>Git y GitHub</li>
-                        <li>VS Code</li>
-                        <li>Terminal / Bash</li>
-                        <li>PostgreSQL</li>
-                    </ul>
-                </article>
-
-                <article class="card">
-                    <div class="card-icon">📋</div>
-                    <h3 class="card-title">Metodologías</h3>
-                    <ul class="card-list">
-                        <li>Scrum</li>
-                        <li>Kanban</li>
-                        <li>Lean / MVP</li>
-                        <li>Git Flow</li>
-                    </ul>
-                </article>
-            </div>
-        </section>
-
-
-
-        <section class="section section-alt">
-            <h2 class="section-title">Educación y Certificaciones</h2>
-
-            <div class="table-container">
-                <table class="data-table">
-                    <thead>
-                        <tr>
-                            <th>Año</th>
-                            <th>Institución / Plataforma</th>
-                            <th>Título / Certificación</th>
-                            <th>Estado</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>2026</td>
-                            <td>IES · Salta</td>
-                            <td>Téc. Superior en Análisis de Sistemas</td>
-                            <td><span class="badge badge-progress">En curso ✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>2025</td>
-                            <td>UNSA</td>
-                            <td>Licenciatura en Ciencias de la Educacion</td>
-                            <td><span class="badge badge-done">En curso ✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>2025</td>
-                            <td>UCASAL</td>
-                            <td>Prof. Universitario en Soporte y Mantenimiento Informatico</td>
-                            <td><span class="badge badge-done">Completado ✓</span></td>
-                        </tr>
-                        <tr>
-                            <td>2023</td>
-                            <td>IES</td>
-                            <td>Tec. Superior en Soporte y Mantenimiento Informatico</td>
-                            <td><span class="badge badge-pending">Completado ✓</span></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-
-        <section id="contacto" class="section">
-            <h2 class="section-title">Contacto</h2>
-            <p class="section-subtitle">
-                ¿Tenés una propuesta o pregunta? Escribime y te respondo a la brevedad.
-            </p>
-
-
-            <form action="#" method="POST" class="contact-form">
-
-
-                <div class="form-group">
-                    <label for="nombre">Nombre completo *</label>
-                    <input
-                        type="text"
-                        id="nombre"
-                        name="nombre"
-                        placeholder="Ej: Pepita Marquez"
-                        required
-                        minlength="3"
-                        maxlength="50"
-                    >
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email *</label>
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="tu@email.com"
-                        required
-                    >
-                </div>
-
-                <div class="form-row">
-                    <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input
-                            type="tel"
-                            id="telefono"
-                            name="telefono"
-                            placeholder="3874123456"
-                            pattern="[0-9]{10}"
-                        >
-                    </div>
-
- 
-                <div class="form-group">
-                    <label for="mensaje">Mensaje *</label>
-                    <textarea
-                        id="mensaje"
-                        name="mensaje"
-                        rows="5"
-                        placeholder="Escribí tu mensaje aquí..."
-                        required
-                        minlength="10"
-                    ></textarea>
-                </div>
-
-                <div class="form-group">
-                    <label class="checkbox-label">
-                        <input type="checkbox" name="acepto" required>
-                        Acepto que mis datos sean utilizados para responder mi consulta *
-                    </label>
-                </div>
-
-                <button type="submit" class="btn btn-primary btn-full">
-                    Enviar mensaje
-                </button>
-
-                <p class="form-note">
-                    * Campos obligatorios!!
-                </p>
-            </form>
-        </section>
-
-    </main>
-
-
-    <footer class="site-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Eileen Cruz</h3>
-                <p>Estudiante de Programación</p>
-                <p>Salta, Argentina · 2026</p>
-            </div>
-
-            <div class="footer-section">
-                <h3>Links útiles</h3>
-                <ul class="footer-links">
-                    <li><a href="https://github.com/eileencross" target="_blank">GitHub</a></li>
-                    <li><a href="https://www.linkedin.com/in/andie-eileen-cruz-597819376" target="_blank">LinkedIn</a></li>
-                    <li><a href="https://www.freecodecamp.org/espanol/eileencross" target="_blank">freeCodeCamp</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-section">
-                <h3>Materia</h3>
-                <p>Prácticas Profesionalizantes II</p>
-                <p>Programador Junior</p>
-                <p>Cruz Andie Eileen</p>
-            </div>
-        </div>
-
-        <hr class="footer-divider">
-
-        <p class="footer-copyright">
-            &copy; 2026 Eileen Cruz · Hecho con HTML5 y CSS3 · Publicado en GitHub Pages
-        </p>
-    </footer>
-
+  <script src="js/include.js" defer></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>
